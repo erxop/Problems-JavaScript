@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My First Javascript Code</title>
+        <script type="text/javascript">
+            //create a date object
+            var day = new Date();
+            //use getDay function to obtain todays day
+            //getDay() method returns the day of the week as a number like 0 for sunday, 1 for monday
+            //this value is stored in todays variable
+            var today = day.getDay();
+            //to get the name of the day as sunday, monday or sarturday, we have created an array named weekday and stored the values
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Sarturday";
+            //weekday[today] will return the day of the week as we want
+            document.write("Today is " + weekday[today] + ".");
+        </script>
+    </head>
+</html>
